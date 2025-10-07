@@ -1,3 +1,5 @@
+import AOS from 'aos';
+import { useEffect } from 'react';
 import { Helmet } from "react-helmet-async";
 import Project0 from '../assets/images/projects/project-1.png'
 import Project1 from '../assets/images/projects/project-1.webp'
@@ -124,13 +126,19 @@ const projects = [
 ];
 
 function ProjectsList() {
+    useEffect(() => {
+        AOS.init({
+            once: true,
+        });
+    }, []);
+
     return (
         <>
             {projects
             .slice()
             .reverse()
             .map((project, index) => (
-                <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4" key={index}>
+                <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4" key={index} data-aos="fade-in" data-aos-duration="1200">
                     <div className="certificate-card">
                         <img src={project.media} alt={project.name} className="certificate-img-2" />
                         <a href={project.link} target="_blank" className="view-link">

@@ -1,3 +1,5 @@
+import AOS from 'aos';
+import { useEffect } from 'react';
 import { Helmet } from "react-helmet-async";
 import HtmlLogo from '../assets/images/tools/html.png'
 import CssLogo from '../assets/images/tools/css.png'
@@ -81,6 +83,12 @@ function ToolsSkills () {
 }
 
 export default function Resume() {
+    useEffect(() => {
+        AOS.init({
+            once: true,
+        });
+    }, []);
+
     return (
         <> 
             <Helmet>
@@ -100,7 +108,7 @@ export default function Resume() {
 
             <section className="timeline mt-3">
                 <ol className="timeline-list">
-                    <li className="timeline-item">
+                    <li className="timeline-item" data-aos="fade-up" data-aos-duration="1000">
                         <div className="d-flex align-items-center justify-content-between">
                             <h4 className="timeline-item-title">Asia Cyber University</h4>
                             <h6 className="timeline-item-text text-pw-primary text-end ms-2">Aug 2025 - Present</h6>
@@ -116,7 +124,7 @@ export default function Resume() {
                             <b>Skills:</b> Emm I haven't gained any knowledge from here because I just started, but I will definitely get a lot
                         </p>
                     </li>
-                    <li className="timeline-item">
+                    <li className="timeline-item" data-aos="fade-up" data-aos-duration="1300">
                         <div className="d-flex align-items-center justify-content-between">
                             <h4 className="timeline-item-title">SMKN 1 Beringin</h4>
                             <h6 className="timeline-item-text text-pw-primary text-end ms-2">Jul 2019 - Jun 2022</h6>
@@ -152,7 +160,7 @@ export default function Resume() {
 
             <section className="timeline mt-3">
                 <ol className="timeline-list">
-                    <li className="timeline-item">
+                    <li className="timeline-item" data-aos="fade-up" data-aos-duration="1300">
                         <h4 className="timeline-item-title">Full-Stack Web Developer</h4>
                         <h6 className="timeline-item-text mb-0">Freelancer - Work From Home</h6>
                         <h6 className="timeline-item-text text-pw-primary">Jan 2024 - Present</h6>
@@ -177,7 +185,7 @@ export default function Resume() {
                             <b>Skills:</b> Web Development · UI/UX Design ·  HTML5 · Casdading Style Sheets (CSS) · Vanilla Js · jQuery · Bootstrap CSS · Tailwind CSS · React Js · PHP · Codeigniter · Laravel · MySQL · Figma · Git
                         </p>
                     </li>
-                    <li className="timeline-item">
+                    <li className="timeline-item" data-aos="fade-up" data-aos-duration="1300">
                         <h4 className="timeline-item-title">Full-Stack Web Developer</h4>
                         <h6 className="timeline-item-text mb-0">RGTOPUP.ID - Work From Home</h6>
                         <h6 className="timeline-item-text text-pw-primary">Sep 2024 - Dec 2024</h6>
@@ -202,7 +210,7 @@ export default function Resume() {
                             <b>Skills:</b> Web Development · jQuery · Cascading Style Sheets (CSS) · UI/UX Design · HTML5 · Graphic Design · Database Design · Figma (Software) · Responsive Web Design · CodeIgniter · MySQL
                         </p>
                     </li>
-                    <li className="timeline-item">
+                    <li className="timeline-item" data-aos="fade-up" data-aos-duration="1300">
                         <h4 className="timeline-item-title">Full-Stack Web Developer</h4>
                         <h6 className="timeline-item-text mb-0">GAMAPAY.ID - Work From Home</h6>
                         <h6 className="timeline-item-text text-pw-primary">Mar 2024 - Jun 2024</h6>
@@ -227,7 +235,7 @@ export default function Resume() {
                             <b>Skills:</b> Administration · CodeIgniter · MySQL · jQuery · Web Development · Web Design · UI/UX Design · Database Design · Cascading Style Sheets (CSS)
                         </p>
                     </li>
-                    <li className="timeline-item">
+                    <li className="timeline-item" data-aos="fade-up" data-aos-duration="1300">
                         <h4 className="timeline-item-title">SEO Copywriter</h4>
                         <h6 className="timeline-item-text mb-0">CSR Auto Film - Jakarta Barat, DKI Jakarta</h6>
                         <h6 className="timeline-item-text text-pw-primary">Jun 2022 - Sep 2022</h6>
@@ -249,7 +257,7 @@ export default function Resume() {
                             <b>Skills:</b> Search Engine Optimization (SEO) · Graphic Design · Copywriting · WordPress · Figma (Software)
                         </p>
                     </li>
-                    <li className="timeline-item">
+                    <li className="timeline-item" data-aos="fade-up" data-aos-duration="1300">
                         <h4 className="timeline-item-title">Blog Owner</h4>
                         <h6 className="timeline-item-text mb-0">Note-Iqbal26.com</h6>
                         <h6 className="timeline-item-text text-pw-primary">2018 - 2021</h6>

@@ -7,6 +7,9 @@ import App from './App.jsx'
 import './assets/bootstrap-5.3.8-dist/css/bootstrap.min.css'
 import './assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js'
 
+// AOS Js
+import 'aos/dist/aos.css';
+
 createRoot(document.getElementById('root')).render(
   <HelmetProvider>
     <App />

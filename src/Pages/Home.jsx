@@ -1,6 +1,14 @@
+import AOS from 'aos';
 import { Helmet } from "react-helmet-async";
+import { useEffect } from 'react';
 
 export default function Home() {
+    useEffect(() => {
+        AOS.init({
+            once: true,
+        });
+    }, []);
+
     return (
         <> 
             <Helmet>
@@ -21,7 +29,7 @@ export default function Home() {
             <h4 className="service-title mb-1">What I'm Doing</h4>
             <div className="row">
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
-                    <div className="card card-service">
+                    <div className="card card-service" data-aos="fade-up" data-aos-duration="500">
                         <div className="card-body">
                             <div className="d-flex align-items-top">
                                 <div className="icon-box mb-3">
@@ -38,7 +46,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
-                    <div className="card card-service">
+                    <div className="card card-service" data-aos="fade-up" data-aos-duration="1000">
                         <div className="card-body">
                             <div className="d-flex align-items-top">
                                 <div className="icon-box mb-3">
@@ -55,7 +63,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
-                    <div className="card card-service">
+                    <div className="card card-service" data-aos="fade-up" data-aos-duration="1500">
                         <div className="card-body">
                             <div className="d-flex align-items-top">
                                 <div className="icon-box mb-3">
@@ -72,7 +80,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
-                    <div className="card card-service">
+                    <div className="card card-service" data-aos="fade-up" data-aos-duration="2000">
                         <div className="card-body">
                             <div className="d-flex align-items-top">
                                 <div className="icon-box mb-3">

@@ -1,3 +1,5 @@
+import AOS from 'aos';
+import { useEffect } from 'react';
 import { Helmet } from "react-helmet-async";
 import CertifLKS from '../assets/images/certificate/Sertifikat LKS.jpg'
 import CertifHtml from '../assets/images/certificate/Sertifikat Kursus HTML CSS.png'
@@ -75,13 +77,19 @@ const certificate = [
 ];
 
 function CertificateList() {
+    useEffect(() => {
+        AOS.init({
+            once: true,
+        });
+    }, []);
+
     return (
         <>
             {certificate
             .slice()
             .reverse()
             .map((certif, index) => (
-                <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6 mb-4" key={index}>
+                <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6 mb-4" key={index} data-aos="fade-in" data-aos-duration="1200">
                     <div className="certificate-card">
                         <img src={certif.media} alt={certif.name} className="certificate-img" />
                         <a href={certif.link} target="_blank" className="view-link">
