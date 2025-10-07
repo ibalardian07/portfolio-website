@@ -16,6 +16,7 @@ import Project10 from '../assets/images/projects/project-rakyatpay.png'
 import Project11 from '../assets/images/projects/project-elaundry.png'
 import Project12 from '../assets/images/projects/project-hotelhebat.png'
 import Project13 from '../assets/images/projects/project-gamapay.png'
+import Project14 from '../assets/images/projects/project-portofolio.png'
 
 const projects = [
     {
@@ -122,6 +123,13 @@ const projects = [
         'media': Project10,
         'link': Project10,
         'stack': ['Bootstrap 5', 'Codeigniter 4'],
+    },
+    {
+        'name': 'Portfolio',
+        'description': 'Simple personal portfolio website',
+        'media': Project14,
+        'link': Project14,
+        'stack': ['Bootstrap 5', 'React Js'],
     },
 ];
 
