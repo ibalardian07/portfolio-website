@@ -3,17 +3,17 @@ import Project0 from '../assets/images/projects/project-1.png'
 import Project1 from '../assets/images/projects/project-1.webp'
 import Project2 from '../assets/images/projects/project-2.webp'
 import Project3 from '../assets/images/projects/project-3.webp'
-import Project3v2 from '../assets/images/projects/project-smm.png'
+import ProjectSmm from '../assets/images/projects/project-smm.png'
 import Project4 from '../assets/images/projects/project-4.jpg'
 import Project5 from '../assets/images/projects/project-5.webp'
 import Project6 from '../assets/images/projects/project-6.webp'
 import Project7 from '../assets/images/projects/project-7.webp'
 import Project8 from '../assets/images/projects/project-8.webp'
 import Project9 from '../assets/images/projects/project-9.jpeg'
-import Project10 from '../assets/images/projects/project-10.png'
-import Project11 from '../assets/images/projects/project-11.png'
-import Project12 from '../assets/images/projects/project-12.png'
-import Project13 from '../assets/images/projects/project-13.png'
+import Project10 from '../assets/images/projects/project-rakyatpay.png'
+import Project11 from '../assets/images/projects/project-elaundry.png'
+import Project12 from '../assets/images/projects/project-hotelhebat.png'
+import Project13 from '../assets/images/projects/project-gamapay.png'
 
 const projects = [
     {
@@ -54,8 +54,8 @@ const projects = [
     {
         'name': 'WaroengSosmed',
         'description': 'SMM Panel is a website for purchasing Social Media Marketing services.',
-        'media': Project3v2,
-        'link': Project3v2,
+        'media': ProjectSmm,
+        'link': ProjectSmm,
         'stack': ['Bootstrap 4', 'Laravel 9'],
     },
     {
