@@ -114,7 +114,7 @@ const projects = [
         'name': 'RGTOPUP',
         'description': 'A Top Up Game, Game Voucher and PPOB website.',
         'media': Project9,
-        'link': Project9,
+        'link': 'https://rgtopup.id/',
         'stack': ['Bootstrap 5', 'Codeigniter 4'],
     },
     {
