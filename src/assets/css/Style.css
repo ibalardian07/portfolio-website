@@ -255,7 +255,7 @@ a {
   display: block;
   transition: filter 0.3s ease;
   border-radius: 8px;
-  height: 140px;
+  height: 180px;
   object-fit: cover;
   object-position: center; 
 }
@@ -356,6 +356,12 @@ a {
   }
 }
 
+.user-img {
+    object-fit: cover;
+    object-position: top;
+    border: 6px solid var(--pw-semi-dark);
+}
+
 /* Desktop */
 
 @media (min-width: 1024px) {
@@ -366,6 +372,12 @@ a {
 
     .navbar-nav > .nav-link {
         margin: 0px 0px 0px 24px;
+    }
+
+    .user-img {
+        width: 60%;
+        height: 160px;
+        border-radius: 14px;
     }
 
     .card.card-info {
@@ -386,9 +398,9 @@ a {
     }
 }
 
-/* Mobile */
+/* Ipad */
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
     .navbar-expand-lg {
         display: block !important;
         padding: 18px !important;
@@ -396,6 +408,59 @@ a {
 
     .navbar-nav > .nav-link {
         margin: 0px;
+    }
+
+    .user-img {
+        width: 30%;
+        height: 220px;
+        border-radius: 16px;
+    }
+
+    .text-name {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--pw-white);
+    }
+
+    .text-title {
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--pw-muted);
+    }
+
+    .article-title {
+        font-size: 24px;
+    }
+
+    .service-title {
+        font-size: 18px;
+    }
+
+    .certificate-img-2 { 
+        height: 200px;
+    }
+
+    .certificate-img { 
+        height: 250px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+    .navbar-expand-lg {
+        display: block !important;
+        padding: 18px !important;
+    }
+
+    .navbar-nav > .nav-link {
+        margin: 0px;
+    }
+
+    .user-img {
+        width: 50%;
+        height: 180px;
+        border-radius: 16px;
     }
 
     .text-name {

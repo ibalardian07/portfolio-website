@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom"
 import { NavLink } from "react-router-dom"
+import UserImg from '../assets/images/users/user-1.png'
 
 export default function LayoutOne() {
     return (
@@ -27,10 +28,13 @@ export default function LayoutOne() {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 mt-4">
+                    <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 mt-4">
                         <div className="card card-info">
                             <div className="card-body">
                                 <div className="info">
+                                    <div className="d-flex align-items-center justify-content-center mb-4">
+                                        <img src={UserImg} alt="M Ardian Iqbal" className="user-img" />
+                                    </div>
                                     <h5 className="text-name text-center mb-0">M Ardian Iqbal</h5>
                                     <p className="text-title text-center mt-2 mb-0">
                                         Full-Stack Web Developer
@@ -69,7 +73,7 @@ export default function LayoutOne() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12 mt-4">
+                    <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12 mt-4">
                         <div className="card card-sec-info">
                             <div className="card-body">
                                 <Outlet />

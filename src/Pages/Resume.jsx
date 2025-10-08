@@ -274,7 +274,7 @@ export default function Resume() {
                     </li>
                     <li className="timeline-item" data-aos="fade-up" data-aos-duration="1300">
                         <h4 className="timeline-item-title">Blog Owner</h4>
-                        <h6 className="timeline-item-text mb-0">Note-Iqbal26.com</h6>
+                        <h6 className="timeline-item-text mb-0">Note-Iqbal26.com - Remote</h6>
                         <h6 className="timeline-item-text text-pw-primary">2018 - 2021</h6>
                         <ul className="timeline-sub-list mb-2">
                             <li className="timeline-text">
