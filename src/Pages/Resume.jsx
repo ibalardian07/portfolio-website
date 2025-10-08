@@ -14,6 +14,9 @@ import MySLogo from '../assets/images/tools/mysql.png'
 import FigmaLogo from '../assets/images/tools/figma.svg'
 import CanvaLogo from '../assets/images/tools/canva.png'
 import GitLogo from '../assets/images/tools/git.svg'
+import BlogLogo from '../assets/images/tools/blogger.png'
+import WordPressLogo from '../assets/images/tools/wordpress.png'
+import OfficeLogo from '../assets/images/tools/office.png'
 
 const toolsList = [
     {
@@ -67,6 +70,18 @@ const toolsList = [
     {
         'name': 'Git',
         'icon': GitLogo,
+    },
+    {
+        'name': 'Blogger',
+        'icon': BlogLogo,
+    },
+    {
+        'name': 'WordPress',
+        'icon': WordPressLogo,
+    },
+    {
+        'name': 'Microsoft Office',
+        'icon': OfficeLogo,
     },
 ];
 
@@ -162,7 +177,7 @@ export default function Resume() {
                 <ol className="timeline-list">
                     <li className="timeline-item" data-aos="fade-up" data-aos-duration="1300">
                         <h4 className="timeline-item-title">Full-Stack Web Developer</h4>
-                        <h6 className="timeline-item-text mb-0">Freelancer - Work From Home</h6>
+                        <h6 className="timeline-item-text mb-0">Freelancer - Remote</h6>
                         <h6 className="timeline-item-text text-pw-primary">Jan 2024 - Present</h6>
                         <ul className="timeline-sub-list mb-2">
                             <li className="timeline-text">
@@ -187,7 +202,7 @@ export default function Resume() {
                     </li>
                     <li className="timeline-item" data-aos="fade-up" data-aos-duration="1300">
                         <h4 className="timeline-item-title">Full-Stack Web Developer</h4>
-                        <h6 className="timeline-item-text mb-0">RGTOPUP.ID - Work From Home</h6>
+                        <h6 className="timeline-item-text mb-0">RGTOPUP.ID - Remote</h6>
                         <h6 className="timeline-item-text text-pw-primary">Sep 2024 - Dec 2024</h6>
                         <ul className="timeline-sub-list mb-2">
                             <li className="timeline-text">
@@ -212,7 +227,7 @@ export default function Resume() {
                     </li>
                     <li className="timeline-item" data-aos="fade-up" data-aos-duration="1300">
                         <h4 className="timeline-item-title">Full-Stack Web Developer</h4>
-                        <h6 className="timeline-item-text mb-0">GAMAPAY.ID - Work From Home</h6>
+                        <h6 className="timeline-item-text mb-0">GAMAPAY.ID - Remote</h6>
                         <h6 className="timeline-item-text text-pw-primary">Mar 2024 - Jun 2024</h6>
                         <ul className="timeline-sub-list mb-2">
                             <li className="timeline-text">
